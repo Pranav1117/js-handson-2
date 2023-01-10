@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JS Handson 2</h1>
+<hr size="5px" color="brown">
+
+      <ol>
+        <li><h2>Calculator</li></h2>
+        <h4>Answer:</h4>
+        <pre>
+         const Calculator = (A, B, C) => 
+         {
+            
+            switch (A){
+              case '+' : 
+                return (B+C);
+                break ;
+                
+                case '-' :
+                  return (B-C);
+                  break;
+                  
+                  case '/':
+                    return (B/C);
+                    break;
+                    
+                    case '*' :
+                      return (B*C);
+                      break ;
+            }
+         };  
+            
+             
+         
+</pre>
+   <hr />  
+   
+
+
+   <li><h2>Check whether the condition is fulfilled or not?
+</li></h2>
+        <h4>Answer:</h4>
+        <pre>
+         const Check_divisibility = (N) => {
+    
+            if (N%6===0 && N%9===0){
+              return 'Divisible by both'
+            }
+            else{
+              return 'Not Divisible by both'
+            }
+                
+            };
+</pre>
+   <hr /> 
+
+
+
+   <li><h2>Eligible Voter</li></h2>
+        <h4>Answer:</h4>
+        <pre>
+         const isEligible = (a) => {
+            if (a>=18) 
+            {
+              return 'Eligible for Voting'
+          }
+          else
+          {
+            return 'Not Eligible for Voting'
+          }
+          };
+</pre>
+   <hr /> 
+
+
+
+   <li><h2>Find Relation</li></h2>
+        <h4>Answer:</h4>
+        <pre>
+         const findRelation = (x,y) => {
+            if(x===y){
+              return x + ' is equal to ' + y;
+            } 
+            else {
+              if(x>y){
+              return x +' is greater than ' + y
+              }
+              else {
+                if (x&lt; y)
+                {return x + ' is smaller than ' + y
+              }
+              } 
+            }
+         };
+</pre>
+   <hr /> 
+
+
+
+   <li><h2>Find Grades</li></h2>
+        <h4>Answer:</h4>
+        <pre>
+
+         const findGrades = (a) => {
+            var grade = 0; 
+            if(a&lt;=10)
+            {
+              grade = 1;
+              // Grade E : 1
+            }
+            if(a>=11 && a&lt;=20)
+            {
+              grade = 2;
+              // Grade D : 2
+            }
+            if(a>=21 && a&lt;=30)
+            {
+              grade = 3;
+              // Grade C : 3
+            }
+            if(a>=31 && a&lt;=40)
+            {
+              grade = 4;
+              // Grade B : 4
+            }
+            if(a>=41 && a&lt;=50)
+            {
+              grade = 5;
+              // Grade A : 5
+            }
+            
+            switch(grade) // key 
+            {
+              case 1 : // 
+                return 'E';
+                break;
+              case 2 : 
+                return 'D';
+                break;
+              case 3 : 
+                return 'C';
+                break;
+              case 4 : 
+                return 'B';
+                break;
+              case 5 : 
+                return 'A';
+                break;
+            }
+          
+          }
+</pre>
+   <hr />  
+
+
+
+   <li><h2>Get Value</li></h2>
+        <h4>Answer:</h4>
+        <pre>
+
+         const getValue = (a) => {
+            var c = a;
+            
+              if(c == 'P' || c == 'p')
+              {
+                return 'PrepBytes';
+              }
+              
+               else 
+               if(c == 'Z' || c == 'z')
+              {
+                return 'Zenith';
+              }
+          
+               else 
+               if (c == 'E' || c == 'e')
+              {
+                return 'Expert Coder';
+              }
+          
+              else
+              if(c == 'D' || c == 'd')
+              {
+                return 'Data Structure';
+          }
+          
+          };
+</pre>
+   <hr />  
+
+   <li><h2>Find the maximum out of three numbers.</li></h2>
+        <h4>Answer:</h4>
+        <pre>
+         const Max_out_of_three = (A,B,C) => {
+            if((A==B) && (A==C))
+             {
+               return -1;
+             }
+             
+             if((A>B) && (A>C))
+             {
+               return A;
+             }
+             if((B>C) && (B>A))
+             {
+               return B;
+             }
+             if((C>A) && (C>B))
+             {
+               return C;
+             }
+              
+           
+           };
+</pre>
+   <hr />  
+
+
+
+   <li><h2>Second Smallest</li></h2>
+        <h4>Answer:</h4>
+        <pre>
+
+         // AOK findSndSmallest
+         const findSndSmallest = (x,y,z) => {
+           // check if X is the smallest or not 
+           if(x&lt; y && x&lt; z)
+           {
+             
+             if(y&lt; z)
+             {
+               return y;
+             }
+             else
+             {
+               return z;
+             }
+           }
+         
+            
+           if(y&lt; x && y&lt; z)
+           {
+              
+             if(x&lt;z)
+             {
+               return x;
+             }
+             else
+             {
+               return z;
+             }
+           }
+        
+           if(z&lt;x && z&lt;y)
+           {
+             
+             if(x&lt; y)
+             {
+               return x;
+             }
+             else
+             {
+               return y;
+             }
+           }
+         
+         };
+</pre>
+   <hr />  
+
+
+   <li><h2>Check whether the triangle is Acute or Obtuse</li></h2>
+        <h4>Answer:</h4>
+        <pre>
+         const Triangle_Check = (A,B,C) => {
+            if (A>90 || B>90 || C>90){
+              return 'obtuse'
+            }  
+           else{
+             return 'acute'
+           }
+         }
+           
+           
+           
+           
+</pre>
+   <hr />  
+      </ol>
+    
+    
+  </body>
+</html>
